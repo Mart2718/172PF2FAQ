@@ -1,0 +1,196 @@
+{
+  "section": "PF2",
+  "title": "Additional Trigonometric Functions",
+  "learningObjective": "Graph trigonometric functions including tangent, cotangent, secant, and cosecant functions and transformations of these functions, and determine the domain and range.",
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "conceptual",
+      "question": "Why do tangent, cotangent, secant, and cosecant have asymptotes when sine and cosine don't?",
+      "answer": "All four of these functions are built as ratios or reciprocals involving sine and cosine: \\( \\tan(x)=\\dfrac{\\sin(x)}{\\cos(x)} \\), \\( \\cot(x)=\\dfrac{\\cos(x)}{\\sin(x)} \\), \\( \\sec(x)=\\dfrac{1}{\\cos(x)} \\), and \\( \\csc(x)=\\dfrac{1}{\\sin(x)} \\). Sine and cosine themselves are never undefined — but the moment you divide by one of them, you create a problem wherever that denominator hits zero. Those are exactly the vertical asymptotes.<div class=\"graph-wrap\"><svg viewBox=\"0 0 260 260\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"92\" y1=\"20\" x2=\"92\" y2=\"240\" stroke=\"#D4622A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><line x1=\"208\" y1=\"20\" x2=\"208\" y2=\"240\" stroke=\"#D4622A\" stroke-width=\"2\" stroke-dasharray=\"5,4\"/><line x1=\"20\" y1=\"110\" x2=\"280\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><polyline points=\"92.0,208.9 99.7,146.9 107.5,131.6 115.2,124.2 122.9,119.6 130.7,116.3 138.4,113.6 146.1,111.2 153.9,108.8 161.6,106.4 169.3,103.7 177.1,100.4 184.8,95.8 192.5,88.4 200.3,73.1 208.0,11.1\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><text x=\"95\" y=\"18\" font-size=\"10\" fill=\"#D4622A\" font-weight=\"600\">cos(x) = 0</text></svg></div><p class=\"graph-caption\">tan(x) shoots toward infinity right where cos(x) — its denominator — equals zero.</p>"
+    },
+    {
+      "id": "faq-2",
+      "category": "conceptual",
+      "question": "What is the domain, range, and period of tangent?",
+      "answer": "The domain of tangent excludes every value where cosine is zero — that's \\( \\dfrac{\\pi}{2}+\\pi k \\) for any integer \\( k \\). The range is all real numbers, \\( (-\\infty,\\infty) \\), since tangent shoots off toward both positive and negative infinity in every branch. The period is \\( \\pi \\) — half the period of sine and cosine — since the pattern of positive-to-negative-to-positive-again repeats twice as fast.<div class=\"graph-wrap\"><svg viewBox=\"0 0 260 260\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"150\" x2=\"250\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"43\" y1=\"20\" x2=\"43\" y2=\"240\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><line x1=\"137\" y1=\"20\" x2=\"137\" y2=\"240\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><line x1=\"231\" y1=\"20\" x2=\"231\" y2=\"240\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><polyline points=\"46.5,248.9 52.3,186.9 58.1,171.6 63.9,164.2 69.7,159.6 75.5,156.3 81.3,153.6 87.1,151.2 92.9,148.8 98.7,146.4 104.5,143.7 110.3,140.4 116.1,135.8 121.9,128.4 127.7,113.1 133.5,51.1\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><polyline points=\"140.7,248.9 146.5,186.9 152.3,171.6 158.1,164.2 163.9,159.6 169.7,156.3 175.5,153.6 181.3,151.2 187.1,148.8 192.9,146.4 198.7,143.7 204.5,140.4 210.3,135.8 216.1,128.4 221.9,113.1 227.7,51.1\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><text x=\"55\" y=\"15\" font-size=\"11\" fill=\"#D4622A\" font-weight=\"700\">period = &pi;</text></svg></div><p class=\"graph-caption\">One full period of tangent spans π, from one asymptote to the next.</p>"
+    },
+    {
+      "id": "faq-3",
+      "category": "conceptual",
+      "question": "What is the domain, range, and period of secant, and how does it relate to cosine?",
+      "answer": "The domain of secant excludes every value where cosine is zero — the exact same excluded values as tangent, since \\( \\sec(x)=\\dfrac{1}{\\cos(x)} \\). The range is \\( (-\\infty,-1] \\cup [1,\\infty) \\) — secant can never land strictly between −1 and 1, since that's exactly the range cosine occupies, and taking a reciprocal of a number between −1 and 1 always produces something with absolute value greater than 1. The period is \\( 2\\pi \\), matching cosine.<div class=\"graph-wrap\"><svg viewBox=\"0 0 280 180\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"110\" x2=\"260\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><line x1=\"123\" y1=\"10\" x2=\"123\" y2=\"170\" stroke=\"#D4622A\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><line x1=\"217\" y1=\"10\" x2=\"217\" y2=\"170\" stroke=\"#D4622A\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><polyline points=\"126.5,148.6 131.6,146.6 136.7,144.7 141.9,142.9 147.0,141.4 152.1,140.1 157.2,139.1 162.3,138.4 167.4,138.0 172.6,138.0 177.7,138.4 182.8,139.1 187.9,140.1 193.0,141.4 198.1,142.9 203.3,144.7 208.4,146.6 213.5,148.6\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"3,3\"/><polyline points=\"126.5,50.4 131.6,108.2 136.7,123.1 141.9,129.7 147.0,133.3 152.1,135.5 157.2,136.8 162.3,137.6 167.4,138.0 172.6,138.0 177.7,137.6 182.8,136.8 187.9,135.5 193.0,133.3 198.1,129.7 203.3,123.1 208.4,108.2 213.5,50.4\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><text x=\"20\" y=\"25\" font-size=\"10\" fill=\"#0a3f52\" font-weight=\"600\">sec(x)</text><text x=\"20\" y=\"165\" font-size=\"10\" fill=\"#94a3b8\" font-weight=\"600\">cos(x)</text></svg></div><p class=\"graph-caption\">secant (solid) curves away from cosine (dotted) wherever cosine gets close to zero, forming a U-shape that never dips inside [−1, 1].</p>"
+    },
+    {
+      "id": "faq-4",
+      "category": "conceptual",
+      "question": "How are cotangent and cosecant related to sine and tangent as reciprocals?",
+      "answer": "Cosecant is the reciprocal of sine: \\( \\csc(x)=\\dfrac{1}{\\sin(x)} \\). Cotangent is the reciprocal of tangent: \\( \\cot(x)=\\dfrac{1}{\\tan(x)}=\\dfrac{\\cos(x)}{\\sin(x)} \\). Because both are built from sine in the denominator (directly or through tangent), both cosecant and cotangent have vertical asymptotes everywhere sine equals zero — at every multiple of \\( \\pi \\)."
+    },
+    {
+      "id": "faq-5",
+      "category": "conceptual",
+      "question": "How does the \"reciprocal point\" relationship work between a function and its reciprocal (like cosine and secant)?",
+      "answer": "For any point \\( (a,b) \\) that lies on the graph of cosine, the point \\( (a,\\frac{1}{b}) \\) lies on the graph of secant — since \\( \\sec(a)=\\dfrac{1}{\\cos(a)}=\\dfrac{1}{b} \\) by definition. This means wherever cosine is close to 1 or −1 (its own maximum or minimum), secant is also close to 1 or −1 — but wherever cosine is close to 0, secant flies off toward infinity, since dividing by a very small number produces a very large result. This exact same point-by-point reciprocal relationship connects sine to cosecant, and tangent to cotangent."
+    },
+    {
+      "id": "faq-6",
+      "category": "sticking-points",
+      "question": "How do I find the vertical asymptotes of tangent or cotangent?",
+      "answer": "For tangent, find every x-value where cosine equals zero: \\( x=\\dfrac{\\pi}{2}+\\pi k \\) for any integer \\( k \\). For cotangent, find every x-value where sine equals zero: \\( x=\\pi k \\) for any integer \\( k \\).<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Vertical asymptotes of \\( \\tan(x) \\): \\( \\ldots, -\\dfrac{\\pi}{2}, \\dfrac{\\pi}{2}, \\dfrac{3\\pi}{2}, \\ldots \\)</p></div>"
+    },
+    {
+      "id": "faq-7",
+      "category": "sticking-points",
+      "question": "How do I find the vertical asymptotes of secant or cosecant?",
+      "answer": "For secant, find every x-value where cosine equals zero (the same locations as tangent's asymptotes). For cosecant, find every x-value where sine equals zero (the same locations as cotangent's asymptotes) — since both secant and cosecant break down exactly where their corresponding denominator hits zero.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Vertical asymptotes of \\( \\csc(x) \\): \\( \\ldots, -\\pi, 0, \\pi, 2\\pi, \\ldots \\)</p></div>"
+    },
+    {
+      "id": "faq-8",
+      "category": "sticking-points",
+      "question": "How do I find the period of a transformed tangent or cotangent function?",
+      "answer": "Divide the usual period, \\( \\pi \\), by the absolute value of the coefficient multiplying x inside the function.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Period of \\( h(x)=\\tan(2x) \\): \\( \\dfrac{\\pi}{|2|}=\\dfrac{\\pi}{2} \\)</p></div>"
+    },
+    {
+      "id": "faq-9",
+      "category": "sticking-points",
+      "question": "How do I find the period of a transformed secant or cosecant function?",
+      "answer": "Divide the usual period, \\( 2\\pi \\), by the absolute value of the coefficient multiplying x inside the function — same process as faq-8, just starting from \\( 2\\pi \\) instead of \\( \\pi \\).<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Period of \\( k(x)=3\\csc\\left(\\dfrac{x}{2}\\right) \\): \\( \\dfrac{2\\pi}{\\left|\\frac{1}{2}\\right|}=4\\pi \\)</p></div>"
+    },
+    {
+      "id": "faq-10",
+      "category": "sticking-points",
+      "question": "How do I find the domain of a transformed reciprocal trig function?",
+      "answer": "First find where the transformed inner function equals zero (that's where the original asymptote pattern lives), then adjust for the horizontal stretch or compression, and finally apply any horizontal shift on top.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Domain of \\( h(x)=\\tan(2x) \\): asymptotes occur where \\( 2x=\\dfrac{\\pi}{2}+\\pi k \\), so \\( x=\\dfrac{\\pi}{4}+\\dfrac{\\pi}{2}k \\)</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">Domain: all reals except \\( x=\\dfrac{\\pi}{4}+\\dfrac{\\pi}{2}k \\) for any integer \\( k \\)</p></div>"
+    },
+    {
+      "id": "faq-11",
+      "category": "sticking-points",
+      "question": "How does the range of secant or cosecant change with a vertical stretch?",
+      "answer": "Multiply both boundary numbers in the range by the amplitude coefficient.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">Range of \\( k(x)=3\\csc\\left(\\dfrac{x}{2}\\right) \\): starting range \\( (-\\infty,-1]\\cup[1,\\infty) \\), multiply boundaries by 3</p><p class=\"math-line\" style=\"margin-top:0.5rem;\">Range: \\( (-\\infty,-3]\\cup[3,\\infty) \\)</p></div>"
+    },
+    {
+      "id": "faq-12",
+      "category": "sticking-points",
+      "question": "How do I graph tangent or cotangent using its asymptotes as a guide?",
+      "answer": "Draw the vertical asymptotes first — they divide the graph into separate branches. Within each branch, the curve passes through a single point where the function equals zero (the middle of that branch), rising or falling smoothly from negative infinity on one side to positive infinity on the other."
+    },
+    {
+      "id": "faq-13",
+      "category": "sticking-points",
+      "question": "How do I graph secant or cosecant using the matching sine or cosine curve as a guide?",
+      "answer": "Sketch the corresponding sine or cosine curve first (lightly, as a guide). Draw vertical asymptotes everywhere that guide curve crosses zero. Then, in each hump of the guide curve, draw a U-shape (or upside-down U) that touches the guide curve's peak or valley and curves away toward the asymptotes on either side."
+    },
+    {
+      "id": "faq-14",
+      "category": "sticking-points",
+      "question": "How do I find the domain, range, period, and asymptotes of a function like h(x) = tan(2x) or k(x) = 3csc(x/2)?",
+      "answer": "Work through each property using the matching method from faqs 8 through 11: find the asymptotes and domain by adjusting the base pattern for the horizontal stretch, find the period by dividing the base period by the stretch factor, and find the range by scaling the base range by the amplitude (for secant and cosecant only — tangent and cotangent keep range \\( (-\\infty,\\infty) \\) no matter what).<div class=\"example-box\"><div class=\"label\">Worked Example: h(x) = tan(2x)</div><p class=\"math-line\">Period: \\( \\dfrac{\\pi}{2} \\) &nbsp;&nbsp; Asymptotes: \\( x=\\dfrac{\\pi}{4}+\\dfrac{\\pi}{2}k \\) &nbsp;&nbsp; Range: \\( (-\\infty,\\infty) \\)</p></div>"
+    },
+    {
+      "id": "faq-15",
+      "category": "connections",
+      "question": "How does this section connect to PF1's amplitude/period/phase-shift ideas?",
+      "answer": "Every transformation idea from PF1 — how a coefficient changes the period, how a shift moves the graph — applies identically here. The only genuinely new piece is the asymptote: since tangent, cotangent, secant, and cosecant have asymptotes that sine and cosine don't, you now have one more feature to track through each transformation, on top of everything PF1 already taught you."
+    },
+    {
+      "id": "faq-16",
+      "category": "connections",
+      "question": "How does this section connect to EL2's exponential asymptotes and FN4's transformations?",
+      "answer": "The underlying logic is identical to EL2: a horizontal shift moves the whole graph, including any asymptotes, by that same amount — exactly like EL2's exponential asymptotes moved with vertical shifts. And every shift, stretch, and reflection here still obeys FN4's original transformation rules; nothing about trig functions changes how transformations fundamentally work, only what specific features (like asymptotes) you need to track through them."
+    },
+    {
+      "id": "faq-17",
+      "category": "connections",
+      "question": "Why do these additional trig functions matter beyond this course?",
+      "answer": "Tangent shows up constantly in real applications involving slopes and angles of elevation, secant and cosecant appear in physics and engineering contexts involving optics and structural angles, and all four functions become essential once you reach calculus, where their derivatives and integrals are standard tools. Understanding their asymptotic behavior now — where they're undefined and why — is exactly the foundation needed to work with them confidently later."
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Graph a Transformation of the Tangent Function (Period and Horizontal Shift)",
+      "url": "https://www.youtube.com/watch?v=MYD_CuUtqeM",
+      "description": "Finding the period and horizontal shift of a transformed tangent function, then graphing it.",
+      "category": "tangent-cotangent",
+      "relatedFaqs": [
+        "faq-2",
+        "faq-8",
+        "faq-10"
+      ]
+    },
+    {
+      "id": "vid-2",
+      "title": "Graphing a Transformation of the Cotangent Function",
+      "url": "https://www.youtube.com/watch?v=-pi-9h8Oh5k",
+      "description": "Graphing a cotangent function with a different period and a vertical stretch.",
+      "category": "tangent-cotangent",
+      "relatedFaqs": [
+        "faq-6",
+        "faq-8",
+        "faq-12"
+      ]
+    },
+    {
+      "id": "vid-3",
+      "title": "Determine the Key Characteristics and Graph a Transformation of the Secant Function",
+      "url": "https://www.youtube.com/watch?v=OlojpsQ3oGY",
+      "description": "Finding all key characteristics — domain, range, period, and asymptotes — of a transformed secant function, then graphing one full period.",
+      "category": "secant-cosecant",
+      "relatedFaqs": [
+        "faq-3",
+        "faq-9",
+        "faq-11",
+        "faq-14"
+      ]
+    },
+    {
+      "id": "vid-4",
+      "title": "Graphing a Transformation of the Cosecant Function",
+      "url": "https://www.youtube.com/watch?v=YbagcqcjBuk",
+      "description": "Describing and graphing a transformation of the cosecant function.",
+      "category": "secant-cosecant",
+      "relatedFaqs": [
+        "faq-7",
+        "faq-13"
+      ]
+    }
+  ],
+  "apps": [],
+  "prompts": {
+    "guided": [
+      {
+        "id": "prompt-1",
+        "title": "Understand Why These Functions Have Asymptotes",
+        "prompt": "I'm learning why tangent, cotangent, secant, and cosecant have vertical asymptotes. Can you walk me through why writing each one as a ratio or reciprocal of sine and cosine explains exactly where those asymptotes come from? Then quiz me: give me one of these functions and ask me to find its asymptotes using this reasoning."
+      },
+      {
+        "id": "prompt-2",
+        "title": "Practice Finding Period and Asymptotes Together",
+        "prompt": "I'm learning to find the period and vertical asymptotes of a transformed tangent, cotangent, secant, or cosecant function. Give me an equation like h(x) = tan(2x) or k(x) = 3csc(x/2), and walk me through finding the period first, then the asymptotes, then the domain. Give me more practice problems and check my work."
+      },
+      {
+        "id": "prompt-3",
+        "title": "Practice Graphing Secant/Cosecant Using the Sine/Cosine Guide",
+        "prompt": "I'm learning to graph secant or cosecant using the corresponding sine or cosine curve as a guide. Give me a transformed secant or cosecant equation, and walk me through sketching the guide curve first, then drawing the U-shaped pieces that touch its peaks and valleys. Check my reasoning at each step."
+      },
+      {
+        "id": "prompt-4",
+        "title": "Explore the Reciprocal Point Relationship",
+        "prompt": "I'm trying to understand the reciprocal point relationship between a function and its reciprocal, like cosine and secant. Give me a few specific points on a cosine graph, and ask me to find the corresponding point on the secant graph for each one. Help me see why points close to the x-axis on cosine correspond to points far from the x-axis on secant."
+      },
+      {
+        "id": "prompt-5",
+        "title": "Connect This Section to PF1 and FN4",
+        "prompt": "I've learned amplitude, period, and phase shift for sine and cosine in PF1, and general transformations in FN4. Now I'm applying those same ideas to tangent, cotangent, secant, and cosecant in PF2, with the added complexity of tracking asymptotes. Can you help me see exactly what's the same and what's genuinely new about this section compared to what I already know?"
+      }
+    ],
+    "open": [
+      {
+        "id": "open-1",
+        "title": "Create Your Own",
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section PF2 (Additional Trigonometric Functions). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+      }
+    ]
+  }
+}
