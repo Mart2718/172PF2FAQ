@@ -154,6 +154,46 @@
         "faq-7",
         "faq-13"
       ]
+    },
+    {
+      "id": "vid-5",
+      "title": "Graphing the Tangent Function",
+      "url": "https://youtu.be/6pc95eHUJhY",
+      "description": "Graphs y = tan x, showing the vertical asymptotes where cos x = 0, the zeros where sin x = 0, and the period of π.",
+      "category": "tangent-cotangent",
+      "relatedFaqs": [
+        "faq-1"
+      ]
+    },
+    {
+      "id": "vid-6",
+      "title": "Example: Graphing the Secant Function Using the Cosine Function",
+      "url": "https://youtu.be/_7OlqezRIbM",
+      "description": "Graphs y = sec x by sketching y = cos x first: asymptotes where cosine is 0, and each branch touching the cosine curve at its peaks and valleys.",
+      "category": "secant-cosecant",
+      "relatedFaqs": [
+        "faq-1",
+        "faq-5"
+      ]
+    },
+    {
+      "id": "vid-7",
+      "title": "Example: Graphing the Cosecant Function Using the Sine Function",
+      "url": "https://youtu.be/v8Pz7Z3YsfY",
+      "description": "Graphs y = csc x by sketching y = sin x first, using the same reciprocal-point idea as secant.",
+      "category": "secant-cosecant",
+      "relatedFaqs": [
+        "faq-4",
+        "faq-5"
+      ]
+    },
+    {
+      "id": "vid-8",
+      "title": "Ex: Graph a Transformation of a Secant Function (Period and Horizontal Shift)",
+      "url": "https://youtu.be/FvNFDNbzljQ",
+      "description": "Graphs a secant function with a new period and a horizontal shift by transforming the cosine guide curve first.",
+      "category": "secant-cosecant",
+      "relatedFaqs": []
     }
   ],
   "apps": [],
